@@ -1,10 +1,5 @@
 #!/usr/bin/env node
-import { greetingName } from "../src/cli.js";
 
-const greeting = () => {
-  const greet = 'Welcome to the Brain Games!';
-  return greet
-}
+import greeting from "../src/cli.js";
 
-console.log(greeting());
-console.log(greetingName());
+greeting();
