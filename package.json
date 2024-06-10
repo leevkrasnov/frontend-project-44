@@ -11,12 +11,14 @@
   "license": "ISC",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.4.0",
     "eslint": "^9.4.0",
-    "globals": "^15.4.0"
+    "globals": "^15.4.0",
+    "mathjs": "^13.0.0"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
