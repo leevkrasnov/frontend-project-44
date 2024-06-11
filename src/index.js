@@ -26,6 +26,6 @@ export const startBrainGames = (beginsGreet, main) => {
     }
   }
   if (result === true) {
-    console.log(`Congrutulations, ${userName}!`);
+    console.log(`Congratulations, ${userName}!`);
   }
 }
