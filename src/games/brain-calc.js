@@ -11,9 +11,7 @@ const main = () => {
   const numSecond = getRandomNumber(1, 10);
   const symbol = symbols[getRandomNumber(0, 2)]
   const question = `${numFirst} ${symbol} ${numSecond}`
-  console.log(typeof(question));
   const correctAnswer = math.evaluate(`${numFirst} ${symbol} ${numSecond}`);
-  console.log(typeof(correctAnswer));
   return [question, String(correctAnswer)];
 }
 
