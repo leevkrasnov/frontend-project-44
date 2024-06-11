@@ -17,3 +17,14 @@ export const getGcd = (firstNum, secondNum) => {
   }
   return firstNum;
 };
+
+//Cоздание прогрессии
+export const getProgression = (start, length, step) => {
+  const result = []
+  let current = 0
+  while (current <= length) {
+    result.push(start + current * step)
+    current += 1
+    }
+  return result
+}
