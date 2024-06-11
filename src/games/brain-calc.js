@@ -7,8 +7,8 @@ const beginsGreet = 'What is the result of the expression?'
 const main = () => {
   const math = create(all)
   const symbols = ['*', '-', '+']
-  const numFirst = getRandomNumber(1, 10);
-  const numSecond = getRandomNumber(1, 10);
+  const numFirst = getRandomNumber(1, 100);
+  const numSecond = getRandomNumber(1, 100);
   const symbol = symbols[getRandomNumber(0, 2)]
   const question = `${numFirst} ${symbol} ${numSecond}`
   const correctAnswer = math.evaluate(`${numFirst} ${symbol} ${numSecond}`);
