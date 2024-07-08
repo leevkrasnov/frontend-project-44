@@ -1,7 +1,7 @@
-import { getRandomNumber } from "../engine.js";
-import { startBrainGames } from "../index.js";
+import startBrainGame from "../index.js";
+import getRandomInteger from "../utils.js";
 
-const beginsGreet = "What is the result of the expression?";
+const instruction = "What is the result of the expression?";
 
 const doArithmetic = (num1, num2, operator = "+") => {
   switch (operator) {
@@ -16,16 +16,16 @@ const doArithmetic = (num1, num2, operator = "+") => {
   }
 };
 
-const main = () => {
-  const symbols = ["*", "-", "+"];
-  const numFirst = getRandomNumber(1, 100);
-  const numSecond = getRandomNumber(1, 100);
-  const symbol = symbols[getRandomNumber(0, 2)];
+const getGameData = () => {
+  const operators = ["+", "-", "*"];
+  const operator = operators[getRandomInteger(0, 2)];
+  const randomNumber1 = getRandomInteger(1, 100);
+  const randomNumber2 = getRandomInteger(1, 100);
 
-  const question = `${numFirst} ${symbol} ${numSecond}`;
-  const correctAnswer = doArithmetic(numFirst, numSecond, symbol);
-  return [question, String(correctAnswer)];
+  const question = `${randomNumber1} ${operator} ${randomNumber2}`;
+  const answer = doArithmetic(randomNumber1, randomNumber2, operator);
+
+  return [question, String(answer)];
 };
-
-const runGameCalc = () => startBrainGames(beginsGreet, main);
+const runGameCalc = () => startBrainGame(instruction, getGameData);
 export default runGameCalc;

@@ -1,13 +1,16 @@
-import { isEven, getRandomNumber } from "../engine.js";
-import { startBrainGames } from "../index.js";
+import startBrainGame from "../index.js";
+import getRandomInteger from "../utils.js";
 
-const beginsGreet = 'Answer "yes" if the number is even, otherwise answer "no".'
+const instruction =
+  'Answer "yes" if the number is even, otherwise answer "no".';
 
-const main = () => {
-  let question = getRandomNumber(1, 100);
-  const correctAnswer = isEven(question) ? 'yes' : 'no';
-  return [question, correctAnswer];
-}
+const isEven = (number) => number % 2 === 0;
+const getGameData = () => {
+  const question = getRandomInteger(1, 100);
+  const answer = isEven(question) ? "yes" : "no";
+  return [question, answer];
+};
 
-const runGameEven = () => startBrainGames(beginsGreet, main);
+const runGameEven = () => startBrainGame(instruction, getGameData);
+
 export default runGameEven;
