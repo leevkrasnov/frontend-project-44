@@ -1,15 +1,15 @@
-import startBrainGame from "../index.js";
-import getRandomInteger from "../utils.js";
+import startBrainGame from '../index.js';
+import getRandomInteger from '../utils.js';
 
-const instruction = "What is the result of the expression?";
+const instruction = 'What is the result of the expression?';
 
-const doArithmetic = (num1, num2, operator = "+") => {
+const doArithmetic = (num1, num2, operator = '+') => {
   switch (operator) {
-    case "+":
+    case '+':
       return num1 + num2;
-    case "-":
+    case '-':
       return num1 - num2;
-    case "*":
+    case '*':
       return num1 * num2;
     default:
       throw new Error(`Unexpected operator: ${operator}`);
@@ -17,7 +17,7 @@ const doArithmetic = (num1, num2, operator = "+") => {
 };
 
 const getGameData = () => {
-  const operators = ["+", "-", "*"];
+  const operators = ['+', '-', '*'];
   const operator = operators[getRandomInteger(0, 2)];
   const randomNumber1 = getRandomInteger(1, 100);
   const randomNumber2 = getRandomInteger(1, 100);

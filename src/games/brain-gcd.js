@@ -1,7 +1,7 @@
-import startBrainGame from "../index.js";
-import getRandomInteger from "../utils.js";
+import startBrainGame from '../index.js';
+import getRandomInteger from '../utils.js';
 
-const instruction = "Find the greatest common divisor of given numbers.";
+const instruction = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (num1, num2) => {
   let gcd = 1;
