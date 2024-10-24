@@ -1,7 +1,5 @@
 # Frontend Project 44
 
----
-
 ### Hexlet tests and linter status:
 
 [![Actions Status](https://github.com/leevkrasnov/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/leevkrasnov/frontend-project-44/actions)
@@ -12,16 +10,12 @@
 
 Этот проект представляет собой интерактивное приложение. Это мой первый проект на платформе Hexlet, и его цель — продемонстрировать базовое понимание работы с JavaScript и взаимодействие с пользователем.
 
----
-
 ## Технологии
 
 - JavaScript
 - Git
 - NPM
 - Makefile
-
----
 
 ## Установка
 
