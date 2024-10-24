@@ -24,13 +24,13 @@
 1. Клонируйте репозиторий локально:
 
 ```bash
-git clone https://github.com/leevkrasnov/frontend-project-44.git
+$ git clone https://github.com/leevkrasnov/frontend-project-44.git
 ```
 
 2. Установите зависимости через Makefile:
 
 ```bash
-make install
+$ make install
 ```
 
 3. Запустите приложение:
@@ -38,29 +38,29 @@ make install
 - Для калькулятора:
 
 ```bash
-make brain-calc
+$ make brain-calc
 ```
 
 - Для определения четного и нечетного числа:
 
 ```bash
-make brain-even
+$ make brain-even
 ```
 
 - Для поиска наибольшего общего делителя заданных чисел:
 
 ```bash
-make brain-gcd
+$ make brain-gcd
 ```
 
 - Для определения простого числа:
 
 ```bash
-make brain-prime
+$ make brain-prime
 ```
 
 - Для поиска пропущенного числа в прогрессии:
 
 ```bash
-make brain-progression
+$ make brain-progression
 ```
